@@ -1,0 +1,20 @@
+[project]
+name = "htb-logo"
+version = "0.1.0"
+description = "Find the logo for a given HTB Machine"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "lowercasenumbers", email = "lowercasenumbers@lowercasenumbers.xyz"}
+]
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+]
+
+[project.scripts]
+htb-logo = "htb_logo:main"
+
+[tool.setuptools]
+py-modules = ["htb_logo"]
